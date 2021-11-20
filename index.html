@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      /* background-image: url(./area.jpeg); */
+
+      font-family: "Baloo Bhai 2", cursive;
+
+      /* background-repeat: repeat-x; */
+    }
+    .img {
+      background-image: url(./area.jpeg);
+      opacity: 60%;
+
+      /* position: absolute; */
+      /* top: 0;
+      left: 0; */
+      width: 100vw;
+      height: auto;
+      overflow: hidden;
+      z-index: -900;
+    }
+    .left {
+      display: inline-block;
+      /* border: 2px solid green; */
+      /* float: left; */
+      position: absolute;
+      left: 42px;
+      top: 12px;
+      border-radius: 10px;
+    }
+    .left img {
+      width: 100px;
+      height: 59px;
+      margin: 0px 25px;
+      filter: invert(100%); /*it inverts the black color to white*/
+    }
+    .left div {
+      text-align: center;
+      line-height: 19px;
+      font-size: 25px;
+    }
+    .mid {
+      display: block; /*these are three */
+      width: 40%; /* conditions*/
+
+      margin: 6px auto; /*to do centre by the help of margin*/
+      /* border: 2px solid rgb(44, 178, 202); */
+      border-radius: 30px;
+    }
+    .right {
+      /* margin-top: 0; */
+      /* border: 2px solid indigo; */
+      position: absolute;
+      right: 32px;
+      top: 20px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 16px;
+      padding-bottom: 12px;
+    }
+    .navbar li a {
+      color: black(44, 247, 243);
+      text-decoration: none;
+      /* text-align: center; */
+      padding: 12px 6px;
+
+      /* margin-bottom: 10px; */
+      font-size: 16px;
+    }
+    .navbar li a:hover,
+    .navbar li a:active {
+      text-decoration: underline;
+      color: brown;
+    }
+    .btn {
+      margin: 0px 9px;
+      background-color: rgb(252, 0, 0);
+      color: white;
+      padding: 4px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: "Baloo Bhai 2", cursive;
+    }
+    .btn:hover {
+      background-color: rgb(68, 65, 65);
+    }
+    .container {
+      position: absolute;
+      right: 68px;
+      top: 140px;
+      border: 2px solid white;
+      width: 35%;
+
+      padding: 55px 28px;
+      border-radius: 10px;
+      /* background-color: coral; */
+    }
+    .form-group input {
+      font-family: "Baloo Bhai 2", cursive;
+      text-align: center;
+      color: blue;
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+      width: 300px;
+      padding: 9px;
+      border: 2px solid rgb(228, 13, 13);
+      margin: 11px auto;
+      border-radius: 12px;
+    }
+    .container h3 {
+      text-align: center;
+    }
+    .container button {
+      display: block;
+      width: 320px;
+      margin: 10px auto;
+    }
+  </style>
+  <body class="img">
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="./agro.png" alt="active" />
+        <div>Odisha centric</div>
+      </div>
+      <!-- mid box for navigation -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h3>join the best gym of Delhi now.</h3>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your locality" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your email-id" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your phone number" />
+        </div>
+        <button class="btn">submit</button>
+      </form>
+    </div>
+  </body>
+</html>
